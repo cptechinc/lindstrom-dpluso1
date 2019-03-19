@@ -36,7 +36,7 @@
         "jwage/purl": "dev-cptechinc",
         "cptechinc/dplus-base": "dev-master",
         "cptechinc/dplus-processwire": "dev-master",
-        "cptechinc/dplus-order": "dev-master",
+        "cptechinc/dplus-order": "dev-propel-orm as dev-master",
         "cptechinc/dplus-items": "dev-master",
         "cptechinc/dplus-dpluso": "dev-master",
         "cptechinc/dplus-content": "dev-master",
@@ -45,7 +45,7 @@
         "cptechinc/dpluso-warehouse": "dev-master"
     },
     "autoload": {
-        "files": [ 
+        "files": [
             "wire/core/ProcessWire.php",
             "vendor/cptechinc/dplus-base/vendor/autoload.php",
             "vendor/cptechinc/dplus-dpluso/vendor/autoload.php",

@@ -1,7 +1,5 @@
 <?php
 	use Dplus\Base\DplusDateTime;
-	//$orderpanel->get_orders();
-	$orders = SalesHistoryQuery::create()->limit(10)->find();
 ?>
 <table class="table table-striped table-bordered table-condensed order-listing-table">
 	<thead>
@@ -27,15 +25,15 @@
 				<td colspan="3">
 					<!--  Documents Link -->
 					<span class="col-xs-3">
-			            <?php if ($order->has_documents()) : ?>
-			                <a href="<?php // $orderpanel->generate_request_documentsURL($order); ?>" class="h3 generate-load-link" title="View Documents" data-loadinto="#sales-history-panel" data-focus="#sales-history-panel">
-			                    <i class="fa fa-file-text" aria-hidden="true"></i>
-			                </a>
-			            <?php else : ?>
-			                <a href="#" class="h3 text-muted" title="No Documents Found">
-			                    <i class="fa fa-file-text" aria-hidden="true"></i>
-			                </a>
-			            <?php endif; ?>
+						<?php if ($order->has_documents()) : ?>
+							<a href="<?php // $orderpanel->generate_request_documentsURL($order); ?>" class="h3 generate-load-link" title="View Documents" data-loadinto="#sales-history-panel" data-focus="#sales-history-panel">
+								<i class="fa fa-file-text" aria-hidden="true"></i>
+							</a>
+						<?php else : ?>
+							<a href="#" class="h3 text-muted" title="No Documents Found">
+								<i class="fa fa-file-text" aria-hidden="true"></i>
+							</a>
+						<?php endif; ?>
 					</span>
 					<!--  Notes Link -->
 					<span class="col-xs-3">
